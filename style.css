@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* NAVBAR */
+header {
+    background: #075b42;
+    padding: 12px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.logo h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #e9c66b;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #e9c66b;
+}
+
+/* HERO */
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+        linear-gradient(90deg,
+        rgba(0,45,30,0.9),
+        rgba(0,0,0,0.35)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCAZK8V8w2sY907Mq7zw4HoQ4CSRFeXf6C9lGfSqd-A&s=10");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subjudul {
+    color: #e9c66b;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 15px 0;
+    letter-spacing: 4px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #d4a83d;
+    color: #073d2e;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* JUDUL */
+.judul {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.judul span,
+.budaya-content span {
+    color: #bd9131;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.judul h2 {
+    font-size: 35px;
+    color: #075b42;
+    margin: 12px 0;
+}
+
+.judul p {
+    color: #777;
+}
+
+/* SEJARAH */
+.sejarah {
+    padding: 90px 10%;
+}
+
+.sejarah-content {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.sejarah-img {
+    flex: 1;
+}
+
+.sejarah-img img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sejarah-text {
+    flex: 1;
+}
+
+.sejarah-text h3 {
+    color: #075b42;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.sejarah-text p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* WISATA */
+.wisata {
+    background: #f3f7f4;
+    padding: 90px 10%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 22px;
+}
+
+.card-text h3 {
+    color: #075b42;
+    margin-bottom: 12px;
+}
+
+.card-text p {
+    color: #777;
+    line-height: 1.7;
+}
+
+/* BUDAYA */
+.budaya {
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #075b42, #023b2b);
+    color: white;
+    text-align: center;
+}
+
+.budaya-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.budaya-content h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.budaya-content p {
+    line-height: 2;
+    color: #e0e9e3;
+}
+
+/* FOOTER */
+footer {
+    background: #022f23;
+    color: white;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+footer h2 {
+    color: #e9c66b;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+    border-top: 1px solid #45685a;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .sejarah-content {
+        flex-direction: column;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .judul h2 {
+        font-size: 28px;
+    }
+
+    .budaya-content h2 {
+        font-size: 30px;
+    }
+}
